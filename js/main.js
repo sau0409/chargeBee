@@ -15,10 +15,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
     nav.classList.remove("pop-up");
   });
 
-  let allTabs = document.querySelectorAll(".tab");
-  let allTabPanel = document.querySelectorAll(".tab_content");
+  let allTabs = document.querySelectorAll(".section-3__part--2 .tab");
+  let allTabPanel = document.querySelectorAll(".section-3__part--2 .tab_content");
   if (allTabs && allTabPanel) {
-    let tabList = document.querySelector(".tablist");
+    let tabList = document.querySelector(".section-3__part--2  .tablist");
     if (tabList) {
       tabList.addEventListener("click", (e) =>
       
@@ -43,7 +43,7 @@ function changeTab(e, allTabs, allTabPanel) {
       tab.setAttribute("tabindex", -1);
     });
 
-    let allLi = document.querySelectorAll('.tablist li');
+    let allLi = document.querySelectorAll('.section-3__part--2 .tablist li');
 
     allLi.forEach(li => {
         li.classList.remove('tab-border');
